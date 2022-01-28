@@ -13,8 +13,8 @@ export const Good = () => {
   return (
     <>
     {
-      new Array(10000).fill('').map(() => {
-        return <Input />
+      new Array(1000).fill('').map((_, id) => {
+        return <Input key={id} />
       })
     }
     </>
